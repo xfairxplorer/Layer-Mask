@@ -1,0 +1,208 @@
+/*----------------------------------------------*\
+    STYLES
+	======
+\*----------------------------------------------*/
+
+@font-face {
+    font-family:"Karrick";
+    src: url(../fonts/Karrik-Regular.woff2),
+    url(../fonts/Karrik-Regular.woff);
+}
+
+@keyframes image-wrapper-1 {
+    0% { 
+        
+      transform: translateY(0) translateX(0);
+    }
+       
+    
+    100% { 
+        transform: translateX(-400px) translateY(-500px); 
+      
+    }
+  }
+
+  @keyframes image-wrapper-2 {
+    0% { 
+        
+      transform: translateY(0) translateX(400px);
+    }
+      
+       
+    
+    100% { 
+        transform: translateX(400px) translateY(-400px); 
+      
+    }
+  }
+
+  @keyframes face {
+      0% {
+          transform: rotate(0deg);
+      }
+
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+ 
+/* body style */
+
+@media only screen and (max-width:1240px) {
+    body {
+        font-family: "Karrick";
+        background-color: #f6bc15;
+        opacity: 1;
+        background-image:  linear-gradient(135deg, #000 25%, transparent 25%), linear-gradient(225deg, #000 25%, transparent 25%), linear-gradient(45deg, #000 25%, transparent 25%), linear-gradient(315deg, #000 25%, #f6bc15 25%);
+        background-position:  40px 0, 40px 0, 0 0, 0 0;
+        background-size: 40px 40px;
+        background-repeat: repeat;
+        color: #4db848;
+    }
+
+    header {
+        max-width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        align-content: center;
+        }
+
+    h1 {
+        font-family: abolition,sans-serif;
+        font-size: 10em;
+        font-weight: 800;
+        font-style: normal;
+        text-align: center;
+        color: #4db848;
+        margin-bottom: 10px;
+        }
+
+    div {
+            margin-top: 0.5em;
+        }
+
+    div p {
+            font-size: 0.8em;
+            background-color: #000000;
+            position: inherit;
+            text-align: center;
+            margin-top: -2em;
+            margin-bottom: 2em;
+        }
+
+    img {
+            width: 360px;
+            height: 360px;
+            object-fit: cover;
+            margin-left: 7.5em;
+            animation: image-wrapper 0.5s infinite alternate ease-in;
+         }
+
+    .image-wrapper-1 {
+            display: flex; 
+            column-gap: 5em;
+            margin-top: 25em;
+            display: grid;
+            margin-left: 7.5em;
+            animation: image-wrapper-1 6s infinite alternate ease-in-out;
+            animation-direction: alternate-reverse;
+        }
+        
+    .image-wrapper-2 {
+            animation: image-wrapper-2 2s infinite alternate ease-in;
+        }    
+
+}
+
+
+
+@media only screen and (min-width:1240px) {
+body {
+    font-family: "Karrick";
+    background-color: #f6bc15;
+    opacity: 1;
+    background-image:  linear-gradient(135deg, #000 25%, transparent 25%), linear-gradient(225deg, #000 25%, transparent 25%), linear-gradient(45deg, #000 25%, transparent 25%), linear-gradient(315deg, #000 25%, #f6bc15 25%);
+    background-position:  40px 0, 40px 0, 0 0, 0 0;
+    background-size: 40px 40px;
+    background-repeat: repeat;
+    color: #4db848;
+}
+
+header {
+position: fixed;
+width: 100%;
+top:0;
+left: 0;
+right: 0;
+}
+
+h1 {
+    font-family: abolition,sans-serif;
+font-size: 20em;
+font-weight: 800;
+font-style: normal;
+text-align: center;
+color: #4db848;
+margin-bottom: 10px;
+}
+
+h2 {
+    font-family: Trickster, serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 8em;
+    position: relative;
+}
+
+div {
+    margin-top: 1em;
+}
+
+div p {
+    font-size: 1.5em;
+    background-color: #000000;
+    position: inherit;
+    text-align: center;
+    margin-top: -2em;
+    margin-bottom: 2em;
+}
+
+img {
+   width: 200px;
+   height: 200px;
+   object-fit: cover;
+   margin-left: 7.5em;
+   animation: image-wrapper 0.5s infinite alternate ease-in;
+}
+
+.image-wrapper-1 {
+    display: flex; 
+    column-gap: 5em;
+    margin-top: 25em;
+    display: grid;
+    margin-left: 7.5em;
+    animation: image-wrapper-1 6s infinite alternate ease-in-out;
+    animation-direction: alternate-reverse;
+}
+
+.image-wrapper-2 {
+    animation: image-wrapper-2 2s infinite alternate ease-in;
+    
+}
+
+.clicc-here {
+    display: block;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    animation: face 5s infinite alternate ease-in-out;
+}
+
+.clicc-here:hover {
+    animation: face 0s ease-in-out;
+}
+
+
+}
